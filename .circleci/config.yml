@@ -10,4 +10,4 @@ workflows:
   maven_test:
     jobs:
       - maven/test:
-        executor: docker-java
+          executor: docker-java
