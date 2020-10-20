@@ -19,11 +19,11 @@ public class FizzBuzzService implements FizzBuzzable {
     }
     
     private String evaluate(int i) {
-        if(i % (fizz*buzz) == 0) {
+        if(i / (fizz*buzz) == 0) {
             return "FizzBuzz";
-        } else if (i % fizz == 0) {
+        } else if (i / fizz == 0) {
             return "Fizz";
-        } else if (i % buzz == 0) {
+        } else if (i / buzz == 0) {
             return "Buzz";
         } else {
             return "" + i;
